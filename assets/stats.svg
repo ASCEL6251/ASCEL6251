@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 170" width="1200" height="170" role="img" aria-label="232 services, 13 disciplines, 3 layers, 1 team">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5980A6"/>
+      <stop offset="1" stop-color="#94BCE3"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:'Segoe UI',Inter,Helvetica,Arial,sans-serif}
+      .mono{font-family:'JetBrains Mono',Consolas,'Courier New',monospace}
+      @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+      @keyframes pop{0%{opacity:0;transform:translateY(16px) scale(.9)}100%{opacity:1;transform:translateY(0) scale(1)}}
+      @keyframes glint{0%,70%,100%{opacity:0}80%{opacity:.9}}
+      .b{animation:grow 1.6s cubic-bezier(.2,.8,.2,1) both;transform-box:fill-box;transform-origin:left center}
+      .n{animation:pop .8s ease-out both;transform-box:fill-box;transform-origin:center}
+      .g{animation:glint 4s ease-in-out infinite}
+    </style>
+  </defs>
+  <g class="sans">
+    <!-- card 1 -->
+    <rect x="10" y="10" width="282" height="150" rx="18" fill="#1D2D3D" stroke="#5980A6" stroke-opacity="0.5"/>
+    <text class="n" x="36" y="80" font-size="54" font-weight="800" fill="#F2F2F3">232</text>
+    <text x="38" y="108" font-size="15" fill="#C9DFF4">services in the catalogue</text>
+    <rect x="38" y="128" width="226" height="6" rx="3" fill="#94BCE3" fill-opacity="0.15"/>
+    <rect class="b" x="38" y="128" width="195" height="6" rx="3" fill="url(#bar)"/>
+    <text x="264" y="80" text-anchor="end" font-size="12" fill="#7EE2A8" class="mono">200 live</text>
+
+    <!-- card 2 -->
+    <rect x="312" y="10" width="282" height="150" rx="18" fill="#1D2D3D" stroke="#5980A6" stroke-opacity="0.5"/>
+    <text class="n" x="338" y="80" font-size="54" font-weight="800" fill="#F2F2F3" style="animation-delay:.15s">13</text>
+    <text x="340" y="108" font-size="15" fill="#C9DFF4">disciplines under one roof</text>
+    <rect x="340" y="128" width="226" height="6" rx="3" fill="#94BCE3" fill-opacity="0.15"/>
+    <rect class="b" x="340" y="128" width="139" height="6" rx="3" fill="url(#bar)" style="animation-delay:.15s"/>
+    <text x="566" y="80" text-anchor="end" font-size="12" fill="#7EE2A8" class="mono">8 live</text>
+
+    <!-- card 3 -->
+    <rect x="614" y="10" width="282" height="150" rx="18" fill="#1D2D3D" stroke="#5980A6" stroke-opacity="0.5"/>
+    <text class="n" x="640" y="80" font-size="54" font-weight="800" fill="#F2F2F3" style="animation-delay:.3s">3</text>
+    <text x="642" y="108" font-size="15" fill="#C9DFF4">layers: Build · Grow · Run</text>
+    <rect class="b" x="642" y="128" width="72" height="6" rx="3" fill="#3E5F80" style="animation-delay:.3s"/>
+    <rect class="b" x="719" y="128" width="72" height="6" rx="3" fill="#5980A6" style="animation-delay:.5s"/>
+    <rect class="b" x="796" y="128" width="72" height="6" rx="3" fill="#94BCE3" style="animation-delay:.7s"/>
+
+    <!-- card 4 -->
+    <rect x="916" y="10" width="274" height="150" rx="18" fill="#5980A6"/>
+    <rect class="g" x="916" y="10" width="274" height="150" rx="18" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <text class="n" x="942" y="80" font-size="54" font-weight="800" fill="#FFFFFF" style="animation-delay:.45s">1</text>
+    <text x="944" y="108" font-size="15" fill="#F2F2F3">team instead of five vendors</text>
+    <text x="944" y="138" font-size="12" fill="#1D2D3D" class="mono" font-weight="700">ONE POINT OF CONTACT →</text>
+  </g>
+</svg>

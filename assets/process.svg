@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="1200" height="250" role="img" aria-label="Engagement process: Discover, Design, Build, Automate, Operate">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#16232F"/>
+      <stop offset="1" stop-color="#1D2D3D"/>
+    </linearGradient>
+    <linearGradient id="track" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5980A6"/>
+      <stop offset="1" stop-color="#94BCE3"/>
+    </linearGradient>
+    <radialGradient id="dot" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.4" stop-color="#94BCE3"/>
+      <stop offset="1" stop-color="#94BCE3" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .sans{font-family:'Segoe UI',Inter,Helvetica,Arial,sans-serif}
+      .mono{font-family:'JetBrains Mono',Consolas,'Courier New',monospace}
+      @keyframes travel{0%{transform:translateX(0)}100%{transform:translateX(960px)}}
+      @keyframes lit{0%,100%{fill:#1D2D3D;stroke:#5980A6}6%,14%{fill:#5980A6;stroke:#C9DFF4}}
+      @keyframes ring{0%,100%{opacity:0;transform:scale(.6)}6%{opacity:.9;transform:scale(1)}20%{opacity:0;transform:scale(1.6)}}
+      @keyframes flow{to{stroke-dashoffset:-48}}
+      .runner{animation:travel 6s cubic-bezier(.65,0,.35,1) infinite}
+      .node{animation:lit 6s linear infinite}
+      .ring{animation:ring 6s ease-out infinite;transform-box:fill-box;transform-origin:center}
+      .flow{stroke-dasharray:8 16;animation:flow 1.2s linear infinite}
+    </style>
+  </defs>
+
+  <rect width="1200" height="250" rx="20" fill="url(#bg)"/>
+  <text x="600" y="40" text-anchor="middle" class="mono" font-size="13" fill="#94BCE3" letter-spacing="4">HOW AN ENGAGEMENT RUNS</text>
+
+  <line x1="120" y1="120" x2="1080" y2="120" stroke="#5980A6" stroke-opacity="0.3" stroke-width="6" stroke-linecap="round"/>
+  <line class="flow" x1="120" y1="120" x2="1080" y2="120" stroke="url(#track)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- nodes: delay = position fraction of 6s run (eased, approximate) -->
+  <g class="sans">
+    <g>
+      <circle class="ring" cx="120" cy="120" r="34" fill="none" stroke="#94BCE3" stroke-width="2" style="animation-delay:0s"/>
+      <circle class="node" fill="#1D2D3D" stroke="#5980A6" cx="120" cy="120" r="26" stroke-width="2" style="animation-delay:0s"/>
+      <text x="120" y="127" text-anchor="middle" font-size="20">🔍</text>
+      <text x="120" y="182" text-anchor="middle" font-size="18" font-weight="700" fill="#F2F2F3">Discover</text>
+      <text x="120" y="205" text-anchor="middle" font-size="13" fill="#94BCE3" class="mono">Week 1</text>
+    </g>
+    <g>
+      <circle class="ring" cx="360" cy="120" r="34" fill="none" stroke="#94BCE3" stroke-width="2" style="animation-delay:2.2s"/>
+      <circle class="node" fill="#1D2D3D" stroke="#5980A6" cx="360" cy="120" r="26" stroke-width="2" style="animation-delay:2.2s"/>
+      <text x="360" y="127" text-anchor="middle" font-size="20">✏️</text>
+      <text x="360" y="182" text-anchor="middle" font-size="18" font-weight="700" fill="#F2F2F3">Design</text>
+      <text x="360" y="205" text-anchor="middle" font-size="13" fill="#94BCE3" class="mono">Weeks 1–2</text>
+    </g>
+    <g>
+      <circle class="ring" cx="600" cy="120" r="34" fill="none" stroke="#94BCE3" stroke-width="2" style="animation-delay:3.0s"/>
+      <circle class="node" fill="#1D2D3D" stroke="#5980A6" cx="600" cy="120" r="26" stroke-width="2" style="animation-delay:3.0s"/>
+      <text x="600" y="127" text-anchor="middle" font-size="20">🛠️</text>
+      <text x="600" y="182" text-anchor="middle" font-size="18" font-weight="700" fill="#F2F2F3">Build</text>
+      <text x="600" y="205" text-anchor="middle" font-size="13" fill="#94BCE3" class="mono">Weeks 2–6</text>
+    </g>
+    <g>
+      <circle class="ring" cx="840" cy="120" r="34" fill="none" stroke="#94BCE3" stroke-width="2" style="animation-delay:3.8s"/>
+      <circle class="node" fill="#1D2D3D" stroke="#5980A6" cx="840" cy="120" r="26" stroke-width="2" style="animation-delay:3.8s"/>
+      <text x="840" y="127" text-anchor="middle" font-size="20">🤖</text>
+      <text x="840" y="182" text-anchor="middle" font-size="18" font-weight="700" fill="#F2F2F3">Automate</text>
+      <text x="840" y="205" text-anchor="middle" font-size="13" fill="#94BCE3" class="mono">Weeks 4–8</text>
+    </g>
+    <g>
+      <circle class="ring" cx="1080" cy="120" r="34" fill="none" stroke="#94BCE3" stroke-width="2" style="animation-delay:5.9s"/>
+      <circle class="node" fill="#1D2D3D" stroke="#5980A6" cx="1080" cy="120" r="26" stroke-width="2" style="animation-delay:5.9s"/>
+      <text x="1080" y="127" text-anchor="middle" font-size="20">📊</text>
+      <text x="1080" y="182" text-anchor="middle" font-size="18" font-weight="700" fill="#F2F2F3">Operate</text>
+      <text x="1080" y="205" text-anchor="middle" font-size="13" fill="#94BCE3" class="mono">Ongoing</text>
+    </g>
+  </g>
+
+  <!-- traveling pulse -->
+  <g class="runner">
+    <circle cx="120" cy="120" r="18" fill="url(#dot)"/>
+    <circle cx="120" cy="120" r="5" fill="#FFFFFF"/>
+  </g>
+</svg>

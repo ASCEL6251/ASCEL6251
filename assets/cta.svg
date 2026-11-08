@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="Ready to put your business on one stack? Start at ascelstack.com">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1D2D3D"/>
+      <stop offset="1" stop-color="#3E5F80"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#94BCE3"/>
+      <stop offset="1" stop-color="#C9DFF4"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:'Segoe UI',Inter,Helvetica,Arial,sans-serif}
+      .mono{font-family:'JetBrains Mono',Consolas,'Courier New',monospace}
+      @keyframes wave{to{transform:translateX(-600px)}}
+      @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+      @keyframes halo{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(1.35)}}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+      .w1{animation:wave 9s linear infinite}
+      .w2{animation:wave 14s linear infinite}
+      .btn{animation:breathe 2.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      .halo{animation:halo 2.6s ease-out infinite;transform-box:fill-box;transform-origin:center}
+      .rot{animation:spin 18s linear infinite;transform-origin:1080px 130px;transform-box:view-box}
+      .rot2{animation:spin 26s linear infinite reverse;transform-origin:120px 130px;transform-box:view-box}
+      .arr{animation:nudge 1.3s ease-in-out infinite}
+    </style>
+    <clipPath id="c"><rect width="1200" height="260" rx="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="1200" height="260" fill="url(#bg)"/>
+    <g class="w1" fill="#94BCE3" fill-opacity="0.08">
+      <path d="M0 200 Q150 160 300 200 T600 200 T900 200 T1200 200 T1500 200 T1800 200 V260 H0Z"/>
+    </g>
+    <g class="w2" fill="#94BCE3" fill-opacity="0.06">
+      <path d="M0 215 Q150 245 300 215 T600 215 T900 215 T1200 215 T1500 215 T1800 215 V260 H0Z"/>
+    </g>
+    <!-- rotating rings -->
+    <g class="rot" fill="none" stroke="#94BCE3" stroke-opacity="0.35">
+      <circle cx="1080" cy="130" r="70" stroke-dasharray="4 10"/>
+      <rect x="1040" y="90" width="80" height="80" rx="10" transform="rotate(45 1080 130)"/>
+    </g>
+    <g class="rot2" fill="none" stroke="#94BCE3" stroke-opacity="0.3">
+      <circle cx="120" cy="130" r="60" stroke-dasharray="2 8"/>
+      <polygon points="120,80 163,155 77,155"/>
+    </g>
+  </g>
+
+  <g class="sans">
+    <text x="600" y="78" text-anchor="middle" class="mono" font-size="13" letter-spacing="4" fill="#94BCE3">BUILD · GROW · RUN</text>
+    <text x="600" y="122" text-anchor="middle" font-size="36" font-weight="800" fill="#F2F2F3">Ready to put your business on one stack?</text>
+
+    <rect class="halo" x="470" y="148" width="260" height="54" rx="27" fill="none" stroke="#C9DFF4" stroke-width="2"/>
+    <g class="btn">
+      <rect x="470" y="148" width="260" height="54" rx="27" fill="url(#btn)"/>
+      <text x="580" y="182" text-anchor="middle" font-size="18" font-weight="700" fill="#1D2D3D">Start a project</text>
+      <text class="arr" x="676" y="183" font-size="20" font-weight="700" fill="#1D2D3D">→</text>
+    </g>
+    <text x="600" y="236" text-anchor="middle" class="mono" font-size="13" fill="#C9DFF4" fill-opacity="0.8">ascelstack.com</text>
+  </g>
+</svg>

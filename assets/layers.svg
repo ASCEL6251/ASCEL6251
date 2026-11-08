@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="Three layers: Build, Grow, Run">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22374B"/>
+      <stop offset="1" stop-color="#16232F"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#94BCE3" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#5980A6" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#94BCE3" stop-opacity="0.7"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:'Segoe UI',Inter,Helvetica,Arial,sans-serif}
+      .mono{font-family:'JetBrains Mono',Consolas,'Courier New',monospace}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+      @keyframes shadow{0%,100%{transform:scaleX(1);opacity:.45}50%{transform:scaleX(.75);opacity:.2}}
+      @keyframes in{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+      @keyframes dash{to{stroke-dashoffset:-60}}
+      @keyframes shimmer{0%,100%{opacity:.25}50%{opacity:1}}
+      .c1{animation:in .8s ease-out both}
+      .c2{animation:in .8s ease-out .2s both}
+      .c3{animation:in .8s ease-out .4s both}
+      .cube{animation:bob 3.6s ease-in-out infinite}
+      .sh{animation:shadow 3.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      .border{stroke-dasharray:14 6;animation:dash 3s linear infinite}
+      .s1{animation:shimmer 2.4s ease-in-out infinite}
+      .s2{animation:shimmer 2.4s ease-in-out .8s infinite}
+      .s3{animation:shimmer 2.4s ease-in-out 1.6s infinite}
+    </style>
+  </defs>
+
+  <!-- connectors between cards -->
+  <g stroke="#94BCE3" stroke-opacity="0.5" stroke-width="2" fill="none" class="border">
+    <path d="M388 165 H412"/>
+    <path d="M788 165 H812"/>
+  </g>
+
+  <!-- BUILD -->
+  <g class="c1 sans">
+    <rect x="12" y="20" width="376" height="290" rx="20" fill="url(#card)"/>
+    <rect x="12" y="20" width="376" height="290" rx="20" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+    <ellipse class="sh" cx="80" cy="128" rx="30" ry="7" fill="#000" fill-opacity="0.35"/>
+    <g class="cube">
+      <polygon points="80,40 114,59 80,78 46,59" fill="#6F96BC"/>
+      <text x="80" y="65" text-anchor="middle" font-size="15" font-weight="800" fill="#1D2D3D" class="mono">B</text>
+      <polygon points="46,59 80,78 80,116 46,97" fill="#2C4862"/>
+      <polygon points="80,78 114,59 114,97 80,116" fill="#3E5F80"/>
+    </g>
+    <text x="140" y="70" font-size="13" fill="#94BCE3" class="mono" letter-spacing="3">LAYER 01</text>
+    <text x="140" y="104" font-size="34" font-weight="800" fill="#F2F2F3">Build</text>
+    <text x="40" y="160" font-size="15" fill="#C9DFF4">The foundations a business runs on.</text>
+    <g font-size="14" fill="#F2F2F3">
+      <circle class="s1" cx="46" cy="196" r="4" fill="#94BCE3"/><text x="60" y="201">Websites &amp; web apps</text>
+      <circle class="s2" cx="46" cy="224" r="4" fill="#94BCE3"/><text x="60" y="229">Mobile apps &amp; SaaS</text>
+      <circle class="s3" cx="46" cy="252" r="4" fill="#94BCE3"/><text x="60" y="257">AI agents · Cloud &amp; IT</text>
+    </g>
+    <text x="360" y="292" text-anchor="end" font-size="12" fill="#5980A6" class="mono">36 live services</text>
+  </g>
+
+  <!-- GROW -->
+  <g class="c2 sans">
+    <rect x="412" y="20" width="376" height="290" rx="20" fill="url(#card)"/>
+    <rect x="412" y="20" width="376" height="290" rx="20" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+    <ellipse class="sh" cx="480" cy="128" rx="30" ry="7" fill="#000" fill-opacity="0.35" style="animation-delay:.6s"/>
+    <g class="cube" style="animation-delay:.6s">
+      <polygon points="480,40 514,59 480,78 446,59" fill="#94BCE3"/>
+      <text x="480" y="65" text-anchor="middle" font-size="15" font-weight="800" fill="#1D2D3D" class="mono">G</text>
+      <polygon points="446,59 480,78 480,116 446,97" fill="#3B5C7C"/>
+      <polygon points="480,78 514,59 514,97 480,116" fill="#4A7096"/>
+    </g>
+    <text x="540" y="70" font-size="13" fill="#94BCE3" class="mono" letter-spacing="3">LAYER 02</text>
+    <text x="540" y="104" font-size="34" font-weight="800" fill="#F2F2F3">Grow</text>
+    <text x="440" y="160" font-size="15" fill="#C9DFF4">Getting found, chosen and paid.</text>
+    <g font-size="14" fill="#F2F2F3">
+      <circle class="s2" cx="446" cy="196" r="4" fill="#94BCE3"/><text x="460" y="201">SEO · Social · Paid ads</text>
+      <circle class="s3" cx="446" cy="224" r="4" fill="#94BCE3"/><text x="460" y="229">Branding &amp; creative</text>
+      <circle class="s1" cx="446" cy="252" r="4" fill="#94BCE3"/><text x="460" y="257">Marketplaces &amp; e-commerce</text>
+    </g>
+    <text x="760" y="292" text-anchor="end" font-size="12" fill="#5980A6" class="mono">50 live services</text>
+  </g>
+
+  <!-- RUN -->
+  <g class="c3 sans">
+    <rect x="812" y="20" width="376" height="290" rx="20" fill="url(#card)"/>
+    <rect x="812" y="20" width="376" height="290" rx="20" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+    <ellipse class="sh" cx="880" cy="128" rx="30" ry="7" fill="#000" fill-opacity="0.35" style="animation-delay:1.2s"/>
+    <g class="cube" style="animation-delay:1.2s">
+      <polygon points="880,40 914,59 880,78 846,59" fill="#C9DFF4"/>
+      <text x="880" y="65" text-anchor="middle" font-size="15" font-weight="800" fill="#1D2D3D" class="mono">R</text>
+      <polygon points="846,59 880,78 880,116 846,97" fill="#6F96BC"/>
+      <polygon points="880,78 914,59 914,97 880,116" fill="#86ACD1"/>
+    </g>
+    <text x="940" y="70" font-size="13" fill="#94BCE3" class="mono" letter-spacing="3">LAYER 03</text>
+    <text x="940" y="104" font-size="34" font-weight="800" fill="#F2F2F3">Run</text>
+    <text x="840" y="160" font-size="15" fill="#C9DFF4">Keeping daily operations moving.</text>
+    <g font-size="14" fill="#F2F2F3">
+      <circle class="s3" cx="846" cy="196" r="4" fill="#94BCE3"/><text x="860" y="201">CRM · ERP · Billing · Payroll</text>
+      <circle class="s1" cx="846" cy="224" r="4" fill="#94BCE3"/><text x="860" y="229">Restaurant systems</text>
+      <circle class="s2" cx="846" cy="252" r="4" fill="#94BCE3"/><text x="860" y="257">Registrations &amp; compliance</text>
+    </g>
+    <text x="1160" y="292" text-anchor="end" font-size="12" fill="#5980A6" class="mono">114 live services</text>
+  </g>
+</svg>
